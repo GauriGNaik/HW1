@@ -1,0 +1,14 @@
+---
+- name: Setup Webservers
+  hosts: webservers
+
+  tasks:
+  - name: Install nginx
+    sudo: yes
+    apt: name=nginx state=installed update_cache=true 
+    notify:
+    - Start Nginx
+
+  handlers:
+  - name: Start Nginx
+    service: name=nginx state=started enabled=yes

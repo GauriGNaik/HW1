@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "Adding the first host to inventory"
+node main1.js
+echo "Adding the second host to inventory"
+node main2.js
+sleep 60s
+echo "Running playbook on both hosts"
+ansible-playbook -s -i inventory playbook.yml
+
+
