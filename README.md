@@ -42,4 +42,9 @@ in the package.json file.
 npm install fs --save
 
 npm install aws-sdk --save
+
+npm install needle --save
 ```
+### Screencast for HW1
+
+![video](https://cloud.githubusercontent.com/assets/11006675/9923506/bdec9bda-5cc3-11e5-9332-d6f181783670.gif)
